@@ -24,7 +24,7 @@ def tutorial():
 				print henchmen.read()
 				henchmen.close()	
 			elif answer == 'weapons':
-				weapons = open('sigmarite weapons'.txt)
+				weapons = open('sigmarite weapons.txt')
 				print weapons.read()
 				weapons.close()
 			elif answer == 'equiptment':
