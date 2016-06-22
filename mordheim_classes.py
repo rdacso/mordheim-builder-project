@@ -2,13 +2,13 @@
 #Classes to hold all the warband related data. 
 
 class Stats(object):
-	def __init__(self, movement, weapon_skill, ballistic_skill, strength, toughness, w, initiative, attack, leadership):
+	def __init__(self, movement, weapon_skill, ballistic_skill, strength, toughness, wounds, initiative, attack, leadership):
 		self.movement = movement
 		self.weapon_skill = weapon_skill
 		self.ballistic_skill = ballistic_skill
 		self.strength = strength
 		self.toughness = toughness
-		self.w = w 
+		self.wounds = wounds 
 		self.initiative = initiative
 		self.attack = attack
 		self.leadership = leadership 
@@ -129,58 +129,3 @@ class WarBand(object):
 
 
 
-# assigning the classes to specific variables 
-
-
-#Call the entire warband object
-
-# 'Experience':20, 'Cost':75, 'Units':1, 'stats': {'movement':4, 'weapon skill':4, 'ballistic skill':4, 'strength':3, 'toughness':3, 'w':1, 'initiative':4, 'attack':1, 'leadership':8}}
-
-# my_character = Character(heroes='my big list of heroes', stats=1)
-
-
-
-
-# print sisters_of_sigmar.heroes
-
-# warband_name = raw_input('Which warband do you wish to play as?').strip()
-
-# help = raw_input("If you need assistance, please type 'help'. To move on to warband creation, please type 'move on'").strip()
-
-# def tutorial():
-# 	if help == 'help':
-# 		for answer in help:
-# 			if warband_name == 'sisters of sigmar'.lower() and help == 'help'.lower():
-# 				answer = raw_input("What do you want to know about? Please enter heroes, henchmen, weapons, equiptment, or spells. To exit this tutorial, please type 'exit'").strip()
-# 			if answer == 'heroes'.lower():
-# 				heroes = open('sigmarite heroes.txt')
-# 				print heroes.read()
-# 				heroes.close()
-# 			elif answer == 'henchmen'.lower():
-# 				henchmen = open('sigmarite henchmen.txt')
-# 				print henchmen.read()
-# 				henchmen.close()	
-# 			elif answer == 'weapons':
-# 				weapons = open('sigmarite weapons.txt')
-# 				print weapons.read()
-# 				weapons.close()
-# 			elif answer == 'equiptment':
-# 				equiptment = open('sigmarite equiptment.txt')
-# 				print equiptment.read()
-# 				equiptment.closer()
-# 			elif answer == 'spells':
-# 				spells = open('sigmarite spells.txt')
-# 				print spells.read()
-# 				spells.close()
-# 			else:
-# 				break
-
-# tutorial()
-
-# def warband_creation():
-# 	if help == 'move on':
-# 		user_heroes = raw_input('Which heroes would you like to select? Your options are: %s' % (sisters_of_sigmar.heroes.keys()))
-
-
-
-# warband_creation()
