@@ -56,9 +56,9 @@ mace = Weapons('mace', 'Perhaps the simplest type of weapon, these brutal, bludg
 
 hammer = Weapons('hammer','Perhaps the simplest type of weapon, these brutal, bludgeoning instruments range from primitive wooden clubs to elaborately forged Dwarf hammers made from the finest steel. A blow from a mace can easily crush a skull or knock a man unconscious','close combat','as user', "Concussion: Hammers and other bludgeoning weapons are excellent to use for striking your enemy senseless. When using a hammer, club or mace, a roll of 2-4 is treated as stunned when rolling to see the extent of a model's injuries.", 3)
 
-sigmarite_warhammer = Weapons('sigmarite warhammer', 'One of the traditional weapons of the Sisterhood, the warhammer echoes Ghal-Maraz,the great hammer of Sigmar himself', 'close combat', 'as user +1', 'Concussion: Warhammers are excellent at striking people senseless. When using a warhammer in close combat a roll of 2-4 is treated as stunned when rolling on the Injury chart.\nHoly Weapon: Each warhammer is blessed by the High Matriarch herself before it is handed to the Sisters. The warhammer has a +1 bonus on all to wound rolls against any Possessed or Undead models. Note that you will still need to score a 6 before any modifiers in order to cause a critical hit. Only Matriarchs and Sister Superiors may carry two Sigmarite warhammers.', 15)
+sigmarite_warhammer = Weapons('sigmarite warhammer', 'one of the traditional weapons of the Sisterhood. The warhammer echoes Ghal-Maraz,the great hammer of Sigmar himself', 'close combat', 'as user +1', 'Concussion: Warhammers are excellent at striking people senseless. When using a warhammer in close combat a roll of 2-4 is treated as stunned when rolling on the Injury chart.\nHoly Weapon: Each warhammer is blessed by the High Matriarch herself before it is handed to the Sisters. The warhammer has a +1 bonus on all to wound rolls against any Possessed or Undead models. Note that you will still need to score a 6 before any modifiers in order to cause a critical hit. Only Matriarchs and Sister Superiors may carry two Sigmarite warhammers.', 15)
 
-steel_whip = Weapons('steel whip', "Another weapon unique to the Sisterhood is the steel whip, made from barbed steel chains. The weapon can be as much as 12' long and some of the Sisters have acquired a truly punishing skill with this weapon.", '4"', 'as user', 'Cannot be parried: The steel whip is a flexible weapon and the Priestesses use it with great expertise. Attempts to parry its strikes are futile. A model attacked by a steel whip may not make parries with swords or bucklers.\nReach: A model armed with a steel whip may attack enemies up to 4" away in the hand-to-hand combat phase. She may make her usual number of attacks, using the normal combat procedure, except that her opponent may not strike back. Note that if the model is already engaged in close combat, she may not use the steel whip to attack opponents other than those in base contact.', 10)
+steel_whip = Weapons('steel whip', "another weapon unique to the Sisterhood. It's made from barbed steel chains. The weapon can be as much as 12' long and some of the Sisters have acquired a truly punishing skill with this weapon.", '4"', 'as user', 'Cannot be parried: The steel whip is a flexible weapon and the Priestesses use it with great expertise. Attempts to parry its strikes are futile. A model attacked by a steel whip may not make parries with swords or bucklers.\nReach: A model armed with a steel whip may attack enemies up to 4" away in the hand-to-hand combat phase. She may make her usual number of attacks, using the normal combat procedure, except that her opponent may not strike back. Note that if the model is already engaged in close combat, she may not use the steel whip to attack opponents other than those in base contact.', 10)
 
 flail = Weapons('flail', "The flail is a heavy weapon wielded with both hands. It normally consists of heavy weights, often spiked, attached to a pole or handle by means of heavy chains. Flails drain the user's stamina quickly, but are awesomely destructive in the hands of a skilled (or unhinged) warrior.", 'close combat', 'as user +2', 'Heavy: A flail is extremely tiring to use and thus the +2 Strength bonus applies only in the first turn of each hand-to-hand combat.\nTwo-handed: As a flail requires two hands to use, a model using a flail may not use a shield, buckler or additional weapon in close combat. If the model has a shield he still gets a +1 bonus to his armour save against shooting.',15)
 
@@ -117,14 +117,6 @@ healing_hand = Spells('Healing Hand', "Laying hands upon a wounded comrade, the 
 armour_of_righteousness = Spells('Armour of Righteousness', 'Impenetrable armour covers the Priest and the fiery image of a twin-tailed comet burns above his head.', 9, "The Priest has an armour save of 2+ which replaces his normal armour save. In addition, he causes fear in his enemies and is therefore immune to fear himself. The power of the Armour of Righteousness lasts until the beginning of the Priest's next Shooting phase.")
 
 
-class WarBand(object):
-	def __init__(self, warband_name, heroes, henchmen, weapons, armor, spells):
-		self.warband_name = warband_name
-		self.heroes = heroes
-		self.henchmen = henchmen
-		self.weapons = weapons
-		self.armor = armor
-		self.spells = spells
 
 
 
