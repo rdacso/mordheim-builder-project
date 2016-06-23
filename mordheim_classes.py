@@ -20,11 +20,11 @@ sister_stats = Stats(4,3,3,3,3,1,3,1,7)
 novice_stats = Stats(4,2,2,3,3,1,3,1,6)
 
 class Character(object):
-	def __init__(self, character_type, character_name, description, weapons_armor, special_rules, experience, cost, units,stats):
+	def __init__(self, character_type, character_name, description, weapons_armour, special_rules, experience, cost, units,stats):
 		self.character_type = character_type
 		self.character_name = character_name
 		self.description = description
-		self.weapons_armor = weapons_armor
+		self.weapons_armour = weapons_armour
 		self.special_rules = special_rules
 		self.experience = experience
 		self.cost = cost
@@ -115,7 +115,6 @@ shield_of_faith = Spells('Shield of Faith', 'A shield of pure white light appear
 healing_hand = Spells('Healing Hand', "Laying hands upon a wounded comrade, the servant of Sigmar calls upon his Lord to heal the warrior's wounds", 5, 'Any one model within 2" of the Priest (including himself) may be healed. The warrior is restored to his full quota of Wounds. In addition, if any friendly models within 2" are stunned or knocked down, they immediately come to their senses, stand up, and continue fighting as normal.')
 
 armour_of_righteousness = Spells('Armour of Righteousness', 'Impenetrable armour covers the Priest and the fiery image of a twin-tailed comet burns above his head.', 9, "The Priest has an armour save of 2+ which replaces his normal armour save. In addition, he causes fear in his enemies and is therefore immune to fear himself. The power of the Armour of Righteousness lasts until the beginning of the Priest's next Shooting phase.")
-
 
 
 
